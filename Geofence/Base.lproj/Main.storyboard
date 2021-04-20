@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Geofence" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVR-Pq-LSc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="272.5"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVp-UZ-7Kc">
+                                        <rect key="frame" x="137" y="106.5" width="140" height="60"/>
+                                        <color key="backgroundColor" red="0.13333333333333333" green="0.66274509803921566" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="SvZ-lq-7fg"/>
+                                            <constraint firstAttribute="height" constant="60" id="qXW-5V-qXs"/>
+                                        </constraints>
+                                        <state key="normal" title="Start (geographic)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="geographicDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdp-0G-c1q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PVp-UZ-7Kc" firstAttribute="centerX" secondItem="KVR-Pq-LSc" secondAttribute="centerX" id="2ei-Bx-C6s"/>
+                                    <constraint firstItem="PVp-UZ-7Kc" firstAttribute="centerY" secondItem="KVR-Pq-LSc" secondAttribute="centerY" id="tyj-jZ-MhX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Kv-qL-FZe">
+                                <rect key="frame" x="0.0" y="316.5" width="414" height="273"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3z-kz-0dm">
+                                        <rect key="frame" x="137" y="106.5" width="140" height="60"/>
+                                        <color key="backgroundColor" red="0.3529411764705882" green="0.72156862745098038" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="UL9-x9-Hes"/>
+                                            <constraint firstAttribute="height" constant="60" id="rUP-co-Ldv"/>
+                                        </constraints>
+                                        <state key="normal" title="Start (beacon)">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="beaconDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zm-uF-q7Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="E3z-kz-0dm" firstAttribute="centerX" secondItem="3Kv-qL-FZe" secondAttribute="centerX" id="GfT-HH-uJz"/>
+                                    <constraint firstItem="E3z-kz-0dm" firstAttribute="centerY" secondItem="3Kv-qL-FZe" secondAttribute="centerY" id="xEQ-fa-Quj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-WR-Ucy">
+                                <rect key="frame" x="0.0" y="589.5" width="414" height="272.5"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymc-JY-dRG">
+                                        <rect key="frame" x="137" y="106" width="140" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.42745098039215684" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="WXz-2E-gVU"/>
+                                            <constraint firstAttribute="width" constant="140" id="rVj-hu-OwT"/>
+                                        </constraints>
+                                        <state key="normal" title="Stop all">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="stopDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rae-Pd-0xv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ymc-JY-dRG" firstAttribute="centerY" secondItem="eLk-WR-Ucy" secondAttribute="centerY" id="W2U-HU-dWc"/>
+                                    <constraint firstItem="Ymc-JY-dRG" firstAttribute="centerX" secondItem="eLk-WR-Ucy" secondAttribute="centerX" id="ae6-fN-9Ud"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eLk-WR-Ucy" secondAttribute="bottom" id="225-ZB-5lC"/>
+                            <constraint firstItem="3Kv-qL-FZe" firstAttribute="top" secondItem="KVR-Pq-LSc" secondAttribute="bottom" id="7dP-kJ-yje"/>
+                            <constraint firstItem="KVR-Pq-LSc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8XW-cX-TOI"/>
+                            <constraint firstItem="3Kv-qL-FZe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ALG-nk-owg"/>
+                            <constraint firstItem="KVR-Pq-LSc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ATM-eP-F09"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Kv-qL-FZe" secondAttribute="trailing" id="GJs-gm-lGd"/>
+                            <constraint firstItem="eLk-WR-Ucy" firstAttribute="height" secondItem="3Kv-qL-FZe" secondAttribute="height" id="IPC-iu-guX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KVR-Pq-LSc" secondAttribute="trailing" id="geR-1n-cNe"/>
+                            <constraint firstItem="3Kv-qL-FZe" firstAttribute="height" secondItem="KVR-Pq-LSc" secondAttribute="height" id="p5B-nD-NvG"/>
+                            <constraint firstItem="eLk-WR-Ucy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pLY-hX-ZMx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eLk-WR-Ucy" secondAttribute="trailing" id="yG7-LX-rb9"/>
+                            <constraint firstItem="eLk-WR-Ucy" firstAttribute="top" secondItem="3Kv-qL-FZe" secondAttribute="bottom" id="yTV-ZE-g8Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-152.17391304347828" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

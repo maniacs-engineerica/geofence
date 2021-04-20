@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6086C2EC262E0A6700585698 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086C2EB262E0A6700585698 /* HttpRequest.swift */; };
+		6086C2F0262E0D8000585698 /* PostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086C2EF262E0D8000585698 /* PostRequest.swift */; };
+		6086C2F6262E11A200585698 /* api.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6086C2F5262E11A200585698 /* api.plist */; };
+		6086C2F9262E126000585698 /* ServiceApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086C2F8262E126000585698 /* ServiceApiError.swift */; };
+		6086C2FC262E167600585698 /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086C2FB262E167600585698 /* Reflection.swift */; };
+		6086C300262E182F00585698 /* TrackSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086C2FF262E182F00585698 /* TrackSave.swift */; };
+		60A48685262876F100E00464 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A48684262876F100E00464 /* UserRepository.swift */; };
+		60A4868A2628782400E00464 /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A486892628782400E00464 /* CoreDataError.swift */; };
+		60A4868E2628787200E00464 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4868D2628787200E00464 /* Repository.swift */; };
+		60A486912628797F00E00464 /* TrackRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A486902628797F00E00464 /* TrackRepository.swift */; };
+		60A4869426287A4200E00464 /* RepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A4869326287A4200E00464 /* RepositoryFactory.swift */; };
+		60E7218F262E76B500B79FE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E7218E262E76B500B79FE5 /* GoogleService-Info.plist */; };
+		60E721A4262E7E0000B79FE5 /* TrackSaveMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E721A3262E7E0000B79FE5 /* TrackSaveMock.swift */; };
+		60EB8C9C262CC93D00E3819E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB8C9B262CC93D00E3819E /* LocationManager.swift */; };
+		60EB8CA0262CCF1100E3819E /* Geofence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EB8C9F262CCF1100E3819E /* Geofence.swift */; };
+		60FC288B26277EF400FF2A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC288A26277EF400FF2A05 /* AppDelegate.swift */; };
+		60FC288D26277EF400FF2A05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC288C26277EF400FF2A05 /* SceneDelegate.swift */; };
+		60FC288F26277EF400FF2A05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC288E26277EF400FF2A05 /* ViewController.swift */; };
+		60FC289226277EF400FF2A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FC289026277EF400FF2A05 /* Main.storyboard */; };
+		60FC289526277EF400FF2A05 /* Geofence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60FC289326277EF400FF2A05 /* Geofence.xcdatamodeld */; };
+		60FC289726277EF800FF2A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60FC289626277EF800FF2A05 /* Assets.xcassets */; };
+		60FC289A26277EF800FF2A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60FC289826277EF800FF2A05 /* LaunchScreen.storyboard */; };
+		D1B64B7CB77CA10914C6C069 /* Pods_Geofence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761C91CDA763FCCFBEA38A99 /* Pods_Geofence.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E576222E110424E3BEC309C /* Pods-Geofence.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geofence.release.xcconfig"; path = "Target Support Files/Pods-Geofence/Pods-Geofence.release.xcconfig"; sourceTree = "<group>"; };
+		6075464B262F07DE00DF9708 /* BuenosAires.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = BuenosAires.gpx; sourceTree = "<group>"; };
+		6075464D262F123700DF9708 /* ZabriskiePoint.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ZabriskiePoint.gpx; sourceTree = "<group>"; };
+		6086C2EB262E0A6700585698 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		6086C2EF262E0D8000585698 /* PostRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequest.swift; sourceTree = "<group>"; };
+		6086C2F5262E11A200585698 /* api.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = api.plist; sourceTree = "<group>"; };
+		6086C2F8262E126000585698 /* ServiceApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApiError.swift; sourceTree = "<group>"; };
+		6086C2FB262E167600585698 /* Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
+		6086C2FF262E182F00585698 /* TrackSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSave.swift; sourceTree = "<group>"; };
+		60A48684262876F100E00464 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		60A486892628782400E00464 /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+		60A4868D2628787200E00464 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		60A486902628797F00E00464 /* TrackRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRepository.swift; sourceTree = "<group>"; };
+		60A4869326287A4200E00464 /* RepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFactory.swift; sourceTree = "<group>"; };
+		60E7218E262E76B500B79FE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60E721A3262E7E0000B79FE5 /* TrackSaveMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSaveMock.swift; sourceTree = "<group>"; };
+		60EB8C9B262CC93D00E3819E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		60EB8C9F262CCF1100E3819E /* Geofence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geofence.swift; sourceTree = "<group>"; };
+		60FC288726277EF400FF2A05 /* Geofence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Geofence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FC288A26277EF400FF2A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60FC288C26277EF400FF2A05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		60FC288E26277EF400FF2A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60FC289126277EF400FF2A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60FC289426277EF400FF2A05 /* Geofence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Geofence.xcdatamodel; sourceTree = "<group>"; };
+		60FC289626277EF800FF2A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60FC289926277EF800FF2A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60FC289B26277EF800FF2A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686E35CC190967E36C5C3ABE /* Pods-Geofence.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Geofence.debug.xcconfig"; path = "Target Support Files/Pods-Geofence/Pods-Geofence.debug.xcconfig"; sourceTree = "<group>"; };
+		761C91CDA763FCCFBEA38A99 /* Pods_Geofence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Geofence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60FC288426277EF400FF2A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B64B7CB77CA10914C6C069 /* Pods_Geofence.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49C1E43BD7A8E45457B86759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				761C91CDA763FCCFBEA38A99 /* Pods_Geofence.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6086C2EA262E0A1B00585698 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6086C2FE262E17FA00585698 /* Base */,
+				6086C2FF262E182F00585698 /* TrackSave.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6086C2FE262E17FA00585698 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6086C2EB262E0A6700585698 /* HttpRequest.swift */,
+				6086C2EF262E0D8000585698 /* PostRequest.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		60A486832628756D00E00464 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				60A48684262876F100E00464 /* UserRepository.swift */,
+				60A4868D2628787200E00464 /* Repository.swift */,
+				60A486902628797F00E00464 /* TrackRepository.swift */,
+				60A4869326287A4200E00464 /* RepositoryFactory.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		60A486882628781200E00464 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				60A486892628782400E00464 /* CoreDataError.swift */,
+				6086C2F8262E126000585698 /* ServiceApiError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		60A4869626287CA500E00464 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				60A486832628756D00E00464 /* Repository */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		60E721A2262E7DE700B79FE5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				60E721A3262E7E0000B79FE5 /* TrackSaveMock.swift */,
+				6075464B262F07DE00DF9708 /* BuenosAires.gpx */,
+				6075464D262F123700DF9708 /* ZabriskiePoint.gpx */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		60EB8C9A262CC91600E3819E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				60EB8C9B262CC93D00E3819E /* LocationManager.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		60FC287E26277EF400FF2A05 = {
+			isa = PBXGroup;
+			children = (
+				60FC288926277EF400FF2A05 /* Geofence */,
+				60FC288826277EF400FF2A05 /* Products */,
+				656A45630804168FB24DD080 /* Pods */,
+				49C1E43BD7A8E45457B86759 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60FC288826277EF400FF2A05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60FC288726277EF400FF2A05 /* Geofence.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60FC288926277EF400FF2A05 /* Geofence */ = {
+			isa = PBXGroup;
+			children = (
+				60E721A2262E7DE700B79FE5 /* Mocks */,
+				6086C2EA262E0A1B00585698 /* Service */,
+				60EB8C9A262CC91600E3819E /* Location */,
+				60A4869626287CA500E00464 /* CoreData */,
+				60A486882628781200E00464 /* Error */,
+				60FC288A26277EF400FF2A05 /* AppDelegate.swift */,
+				60FC288C26277EF400FF2A05 /* SceneDelegate.swift */,
+				60FC288E26277EF400FF2A05 /* ViewController.swift */,
+				60FC289026277EF400FF2A05 /* Main.storyboard */,
+				60FC289626277EF800FF2A05 /* Assets.xcassets */,
+				60FC289826277EF800FF2A05 /* LaunchScreen.storyboard */,
+				60FC289B26277EF800FF2A05 /* Info.plist */,
+				60FC289326277EF400FF2A05 /* Geofence.xcdatamodeld */,
+				60EB8C9F262CCF1100E3819E /* Geofence.swift */,
+				6086C2F5262E11A200585698 /* api.plist */,
+				6086C2FB262E167600585698 /* Reflection.swift */,
+				60E7218E262E76B500B79FE5 /* GoogleService-Info.plist */,
+			);
+			path = Geofence;
+			sourceTree = "<group>";
+		};
+		656A45630804168FB24DD080 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				686E35CC190967E36C5C3ABE /* Pods-Geofence.debug.xcconfig */,
+				1E576222E110424E3BEC309C /* Pods-Geofence.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60FC288626277EF400FF2A05 /* Geofence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60FC289E26277EF800FF2A05 /* Build configuration list for PBXNativeTarget "Geofence" */;
+			buildPhases = (
+				743C9190FD94D711B102B850 /* [CP] Check Pods Manifest.lock */,
+				60FC288326277EF400FF2A05 /* Sources */,
+				60FC288426277EF400FF2A05 /* Frameworks */,
+				60FC288526277EF400FF2A05 /* Resources */,
+				4D226B721C65B6290C871BB7 /* [CP] Embed Pods Frameworks */,
+				60E7219F262E77CE00B79FE5 /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Geofence;
+			productName = Geofence;
+			productReference = 60FC288726277EF400FF2A05 /* Geofence.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60FC287F26277EF400FF2A05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					60FC288626277EF400FF2A05 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 60FC288226277EF400FF2A05 /* Build configuration list for PBXProject "Geofence" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60FC287E26277EF400FF2A05;
+			productRefGroup = 60FC288826277EF400FF2A05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60FC288626277EF400FF2A05 /* Geofence */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60FC288526277EF400FF2A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60FC289A26277EF800FF2A05 /* LaunchScreen.storyboard in Resources */,
+				6086C2F6262E11A200585698 /* api.plist in Resources */,
+				60E7218F262E76B500B79FE5 /* GoogleService-Info.plist in Resources */,
+				60FC289726277EF800FF2A05 /* Assets.xcassets in Resources */,
+				60FC289226277EF400FF2A05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D226B721C65B6290C871BB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geofence/Pods-Geofence-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Geofence/Pods-Geofence-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Geofence/Pods-Geofence-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60E7219F262E77CE00B79FE5 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		743C9190FD94D711B102B850 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Geofence-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60FC288326277EF400FF2A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A4868E2628787200E00464 /* Repository.swift in Sources */,
+				6086C2F0262E0D8000585698 /* PostRequest.swift in Sources */,
+				60FC288F26277EF400FF2A05 /* ViewController.swift in Sources */,
+				60EB8C9C262CC93D00E3819E /* LocationManager.swift in Sources */,
+				60FC289526277EF400FF2A05 /* Geofence.xcdatamodeld in Sources */,
+				60E721A4262E7E0000B79FE5 /* TrackSaveMock.swift in Sources */,
+				60A4869426287A4200E00464 /* RepositoryFactory.swift in Sources */,
+				6086C2EC262E0A6700585698 /* HttpRequest.swift in Sources */,
+				60FC288B26277EF400FF2A05 /* AppDelegate.swift in Sources */,
+				6086C2FC262E167600585698 /* Reflection.swift in Sources */,
+				60EB8CA0262CCF1100E3819E /* Geofence.swift in Sources */,
+				6086C2F9262E126000585698 /* ServiceApiError.swift in Sources */,
+				60A48685262876F100E00464 /* UserRepository.swift in Sources */,
+				60A486912628797F00E00464 /* TrackRepository.swift in Sources */,
+				60FC288D26277EF400FF2A05 /* SceneDelegate.swift in Sources */,
+				6086C300262E182F00585698 /* TrackSave.swift in Sources */,
+				60A4868A2628782400E00464 /* CoreDataError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		60FC289026277EF400FF2A05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60FC289126277EF400FF2A05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60FC289826277EF800FF2A05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60FC289926277EF800FF2A05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60FC289C26277EF800FF2A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60FC289D26277EF800FF2A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60FC289F26277EF800FF2A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686E35CC190967E36C5C3ABE /* Pods-Geofence.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NAYF6TJ97;
+				INFOPLIST_FILE = Geofence/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascohen.Geofence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60FC28A026277EF800FF2A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E576222E110424E3BEC309C /* Pods-Geofence.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5NAYF6TJ97;
+				INFOPLIST_FILE = Geofence/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matiascohen.Geofence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60FC288226277EF400FF2A05 /* Build configuration list for PBXProject "Geofence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60FC289C26277EF800FF2A05 /* Debug */,
+				60FC289D26277EF800FF2A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60FC289E26277EF800FF2A05 /* Build configuration list for PBXNativeTarget "Geofence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60FC289F26277EF800FF2A05 /* Debug */,
+				60FC28A026277EF800FF2A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		60FC289326277EF400FF2A05 /* Geofence.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				60FC289426277EF400FF2A05 /* Geofence.xcdatamodel */,
+			);
+			currentVersion = 60FC289426277EF400FF2A05 /* Geofence.xcdatamodel */;
+			path = Geofence.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 60FC287F26277EF400FF2A05 /* Project object */;
+}
